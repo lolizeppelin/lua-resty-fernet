@@ -10,6 +10,7 @@ INSTALL ?= install
 all: ;
 
 install: all
+	$(INSTALL) -d $(DESTDIR)/$(LUA_LIB_DIR)/resty
 	$(INSTALL) lib/resty/*.lua $(DESTDIR)/$(LUA_LIB_DIR)/resty/
 
 test: all
